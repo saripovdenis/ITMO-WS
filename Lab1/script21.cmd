@@ -1,15 +1,15 @@
 @echo off
 
 echo "Enter a string:"
- set /p string
- REM /p mean a input in our variable
- set userName=UPart2%string%
- set groupName=GPart2%string%
+set /p string
 
- net user %userName% /add
+set userName=UPart2%string%
+set groupName=GPart2%string%
 
- net localgroup %groupName% /add
+net user %userName% /add
 
- net localgroup %groupName% %userName% /add
+net localgroup %groupName% /add
 
- net user %userName% /active:yes
+net localgroup %groupName% %userName% /add
+
+net user %userName% /active:yes
