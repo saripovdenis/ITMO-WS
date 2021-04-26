@@ -1,4 +1,4 @@
-$NewName = "s1"
+$NewName = "c1"
 
 Write-Host "Name of this computer:"
 $env:COMPUTERNAME
